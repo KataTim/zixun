@@ -1,149 +1,104 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ZiXun · 网站迁移通知</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                "Microsoft YaHei",
-                sans-serif;
-            background: #f5f7fa;
-            color: #1f2937;
-        }
-
-        .container {
-            width: min(90%, 520px);
-            background: #ffffff;
-            border-radius: 18px;
-            padding: 48px 36px;
-            text-align: center;
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-        }
-
-        .icon {
-            width: 64px;
-            height: 64px;
-            margin: 0 auto 24px;
-            border-radius: 16px;
-            background: #111827;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            font-weight: 700;
-        }
-
-        h1 {
-            margin: 0 0 14px;
-            font-size: 26px;
-            font-weight: 650;
-        }
-
-        .description {
-            margin: 0 auto 30px;
-            line-height: 1.7;
-            color: #6b7280;
-            font-size: 15px;
-        }
-
-        .notice {
-            padding: 14px 16px;
-            margin-bottom: 28px;
-            border-radius: 10px;
-            background: #f3f4f6;
-            color: #4b5563;
-            font-size: 14px;
-        }
-
-        .download {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            min-height: 50px;
-            padding: 0 20px;
-            border-radius: 10px;
-            background: #111827;
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 600;
-            transition: 0.2s ease;
-        }
-
-        .download:hover {
-            background: #374151;
-            transform: translateY(-1px);
-        }
-
-        .download:active {
-            transform: translateY(0);
-        }
-
-        .footer {
-            margin-top: 28px;
-            color: #9ca3af;
-            font-size: 12px;
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 38px 24px;
-            }
-
-            h1 {
-                font-size: 23px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zixun · DaysCycle Fans — 停運公告</title>
+<style>
+  :root {
+    --bg: #0b0c10;
+    --panel: #14161c;
+    --line: #2a2d36;
+    --ink: #e8e8ec;
+    --ink-dim: #9a9ca6;
+    --accent: #c9a6f0;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    height: 100%;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    max-width: 460px;
+    width: 100%;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 40px 32px 34px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+  }
+  .mark {
+    width: 46px; height: 46px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    border: 1.5px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    color: var(--accent);
+    opacity: 0.9;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+  .sub {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin: 0 0 28px;
+  }
+  p {
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--ink-dim);
+    margin: 0 0 16px;
+    text-align: left;
+  }
+  p:last-of-type { margin-bottom: 0; }
+  .divider {
+    height: 1px;
+    background: var(--line);
+    margin: 26px 0;
+    border: none;
+  }
+  .foot {
+    font-size: 11px;
+    color: #6b6d76;
+    letter-spacing: 0.04em;
+  }
+</style>
 </head>
-
 <body>
+  <div class="card">
+    <div class="mark" aria-hidden="true">●</div>
+    <h1>Zixun · DaysCycle Fans</h1>
+    <div class="sub">服务终止公告</div>
 
-    <main class="container">
+    <p>因不可抗力因素,Zixun 及其社区子站 DaysCycle · Fans 现已正式停止运营。站内全部功能(登录、消息、社区档案、投稿、评论等)均已关闭,不再提供访问。</p>
+    <p>感谢每一位曾经在这里停留、书写、创作与交流的人。这段时间里留下的所有内容,都是真实发生过的事情。</p>
+    <p>本页面为最终状态,此后不会再有更新。</p>
 
-        <div class="icon">Z</div>
+    <hr class="divider">
+    <p style="text-align:center; margin-bottom:6px;">如果还想找到彼此,可以加入这个 QQ 群继续联系:</p>
+    <p style="text-align:center; margin-bottom:0;">
+      <a href="https://qm.qq.com/q/2J2RmhyiYg" style="color:var(--accent); text-decoration:none;">https://qm.qq.com/q/2J2RmhyiYg</a><br>
+      群号:425683062
+    </p>
 
-        <h1>网站已迁移</h1>
-
-        <p class="description">
-            ZiXun 网站已完成迁移。<br>
-            当前页面已停止提供原有服务，请前往新的平台继续使用。
-        </p>
-
-        <div class="notice">
-            如需继续使用 ZiXun，请下载最新版本客户端。
-        </div>
-
-        <!-- APK 与本 HTML 位于同一目录 -->
-        <a class="download"
-           href="./zixun.apk"
-           download="zixun.apk">
-            下载最新客户端（APK）
-        </a>
-
-        <div class="footer">
-            ZiXun · Latest Client
-        </div>
-
-    </main>
-
+    <hr class="divider">
+    <div class="foot">Zixun &amp; DaysCycle · Fans — Service Discontinued</div>
+  </div>
 </body>
 </html>
